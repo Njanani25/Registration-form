@@ -1,0 +1,65 @@
+<html> 
+<head> 
+<title>Online Baking System</title> 
+</head> 
+<style>
+h1{
+   color:green;
+   font-size:2.5em;
+}
+form
+{
+   font-size:1.875em;
+   font-family:cursive;
+}
+</style>
+<center>
+<body bgcolor="powderblue"> 
+<h1>Online Registration Form</h1> 
+<table>
+<tr><td><b>Name:</b></td><td><input type="text" name="userName"></tr> 
+<tr><td><b>Password:</b></td><td><input type="password"name="pwd"></tr>  
+<form action="/action_page.php">
+  <label for="email"><tr><td><b>Enter your email:</b></td><td></label>
+  <input type="email" id="email" name="email">
+</tr>
+<tr>
+<td><b>Sex:</b></td> 
+<td><input type="radio" name="group1" value="Male">Male</td> 
+<td><input type="radio" name="group1" value="Female">FeMale</td> 
+</tr> 
+<tr><td><b>DOB:</b></td><td>
+<select name="month">
+<option value="month">Month</option>
+<option value="january">January</option>
+<option value="february">february</option>
+</select>
+<select name="days">
+<option value="days">D</option>
+<option value="1">1</option>
+<option value="2">2</option>
+</select>
+<select name="year">
+<option value="years">years</option>
+<option value="2000">2000</option>
+<option value="2003">2003</option>
+</select></tr>
+<form action="/action_page.php">
+  <label for="phone"><tr><td><b>phone number:</b></td><td></label>
+  <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+</tr>
+<tr><td><b>Languages Known:</b></td>
+<td><input type="checkbox" name="option1" value="English">English</td></tr>
+<tr><td></td><td><input type="checkbox" name="Tamil" value="Tamil">Tamil</td></tr>
+<tr><td></td><td><input type="checkbox" name="option1" value="Telugu">Telugu</td></tr>
+<td></td><td><input type="checkbox" name="option1" value="Hindi">Hindi</td></tr> 
+<form action="/action_page.php">
+  <label for="Address"><tr><td><b>Address:</b></td><td></label>
+  <textarea id="Address" name="Address" rows="3" cols="40">Write your Address</textarea>
+</tr></table>
+<input type="submit" value="Submit"> 
+<input type="reset" value="Reset"> 
+</center> 
+</form> 
+</body> 
+</html>
